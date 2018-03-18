@@ -16,11 +16,12 @@ public:
 
 private slots:
     void on_pushButton_4_clicked();
+    void showMessage(const QString &path);
 
 private:
     Ui::Widget *ui;
     QSqlTableModel *model;
-    QFileSystemWatch myWatcher;
+    QFileSystemWatcher myWatcher;
 };
 
 #endif // WIDGET_H
