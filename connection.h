@@ -20,15 +20,10 @@ static bool createConnection(){
     query.exec("insert into library values('6921168509256', 'one', 'li')");
     query.exec("insert into library values('6901285991219', 'two', 'ze')");
     query.exec("insert into library values('6923450656181', 'three', 'hong')");
-
-    // 创建图书位置表
-    query.exec("create table course (id int primary key, "
-                       "name varchar, teacher varchar)");
-    query.exec("insert into course values(10, '数学', '王老师')");
-    query.exec("insert into course values(11, '英语', '张老师')");
-    query.exec("insert into course values(12, '计算机', '白老师')");
-
     return true;
+    //创建位置表
+    query.exec("create table position (id varchar primary key,"
+               "name varchar,author varchar)");
 
 }
 
